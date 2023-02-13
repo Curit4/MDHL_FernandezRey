@@ -2,20 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-header {
-    background-color: #b84242;
+header {background-color: #b84242;
     min-height: 10vh;
-
 }
 
 h1 {
-    background-color: #b84242;
+    background-color: #b84242; 
     font-size: 4rem;
     padding: 0.5rem;
 }
+
 .portada {
     height: 50vh;
     width: 100%;
@@ -26,6 +25,7 @@ h1 {
     width: 100%;
     object-fit: cover;
 }
+
 nav {
     position: absolute;
     top: 70px;
@@ -60,47 +60,58 @@ nav>a:hover {
     border: 1px solid black;
     text-decoration: none;
 }
+
 main {
     background-color: wheat;
-    min-height: 80vh;
-   
+     min-height: 40vh; 
+    
 }
 
-figure {width:12%;
+figure {margin-top: 3px; 
+    width:16%;
     display: inline-block;
 }
 
 #logo {
-    height: 12rem;
-    margin-top: 3px;
+    height: 10rem;
+} 
+
+section {vertical-align: top;
+    /* margin-top:2rem;
+    border: solid 2px #b84242;
+    border-radius: 1rem; */
     display: inline-block;
+    width:65%;
+    max-width:75%;
 }
-section {
+
+/* section { 
     border: solid 2px #b84242;
     border-radius: 1rem;
     padding: 15px;
-    width:75%;
+    width:65%;
+    max-width: 75%;
     display: inline-block;
-}
-.box{
+} */
+
+  .box {
     border: 2px solid black;
     text-align: center;
     background-color: #b84242;
     padding: 9px;
-    width:100%;
-    position: absolute;
-    right:0px;
-    bottom: 279px;
+    position: relative;
+    right: 0px;
+    bottom: 3rem;
+    margin-left:-35%;
+    margin-right:-35%;
+}   
+section p {
+    padding-bottom: 1rem;
 }
 
-section p {  
-    padding-bottom: 1rem;
-} 
-  
 .gallery {
     height: 100px;
     border: solid 2px #b84242;
-    display: inline-block;
     box-sizing: border-box;
 }
 
