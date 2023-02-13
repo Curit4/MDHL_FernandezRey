@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    background-color: #b84242;
+    min-height: 10vh;
+
+}
+
+h1 {
+    background-color: #b84242;
+    font-size: 4rem;
+    padding: 0.5rem;
+}
+.portada {
+    height: 50vh;
+    width: 100%;
+}
+
+#portadaFoto {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+nav {
+    position: absolute;
+    top: 70px;
+    right: 40px;
+}
+
+nav>a {
+    font-size: 28px;
+    background-color: #b84242;
+    color: white;
+    box-shadow: 2px 2px 7px 1px black;
+    padding: 2px 10px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+nav>a:hover {
+    color: white;
+    box-shadow: 2px 2px 7px 1px black;
+    padding: 5px 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.active {
+    background-color: #e4b1b1;
+    color: black;
+    font-weight: 700;
+    box-shadow: 2px 2px 7px 1px black;
+    padding: 2px 10px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+main {
+    background-color: wheat;
+    min-height: 80vh;
+   
+}
+
+figure {width:12%;
+    display: inline-block;
+}
+
+#logo {
+    height: 12rem;
+    margin-top: 3px;
+    display: inline-block;
+}
+section {
+    border: solid 2px #b84242;
+    border-radius: 1rem;
+    padding: 15px;
+    width:75%;
+    display: inline-block;
+}
+.box{
+    border: 2px solid black;
+    text-align: center;
+    background-color: #b84242;
+    padding: 9px;
+    width:100%;
+    position: absolute;
+    right:0px;
+    bottom: 279px;
+}
+
+section p {  
+    padding-bottom: 1rem;
+} 
+  
+.gallery {
+    height: 100px;
+    border: solid 2px #b84242;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.gallery:hover {
+    transform: matrix(5, 0, 0, 5, -250, -200);
+}
