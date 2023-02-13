@@ -81,7 +81,7 @@ figure {
 section {
     vertical-align: top;
     display: inline-block;
-    width: 65%;
+    width: 64%;
     max-width: 75%;
 }
 
@@ -89,12 +89,11 @@ section {
     border: 2px solid black;
     text-align: center;
     background-color: #b84242;
-    padding: 9px;
+    padding: 8px;
     position: relative;
-    right: 0px;
     bottom: 3rem;
-    margin-left: -35%;
-    margin-right: -35%;
+    margin-left: -28%;
+    margin-right: -30.8%;
 }
 
 section p {
