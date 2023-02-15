@@ -1,114 +1,165 @@
 * {
     margin: 0;
-    padding: 0;  
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-ol.letra{
-    list-style-type:lower-alpha;
-    padding-left:30px;
-}
+
 header {
-    background-color: #b84242;
-    min-height: 10vh;
-}
-
-h1 {
-    background-color: #b84242;
-    font-size: 4rem;
-    padding: 0.5rem;
-}
-
-.portada {
-    height: 50vh;
+    min-height: 40vh;
+    display: flex;
+    display: inline-block;
+    background-image: url(./assets/design2_image1.jpg);
     width: 100%;
-}
 
-#portadaFoto {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
 }
 
 nav {
-    position: absolute;
-    top: 70px;
-    right: 40px;
+    background-color: #b84242;
+    display: flex;
+    gap: 1rem;
+    flex-grow: 1;
+    justify-content: space-around;
+    align-self: flex-start;
+    border: 2px solid black;
 }
 
 nav>a {
     font-size: 28px;
     background-color: #b84242;
     color: white;
-    box-shadow: 2px 2px 7px 1px black;
-    padding: 2px 10px;
-    border: 1px solid black;
+    padding: 2px 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
     text-decoration: none;
 }
 
 nav>a:hover {
+    background-color: black;
     color: white;
-    box-shadow: 2px 2px 7px 1px black;
-    padding: 5px 10px;
-    border: 1px solid black;
     text-decoration: none;
-    font-weight: 700;
 }
 
 .active {
-    background-color: #e4b1b1;
+    background-color: #ffffff;
     color: black;
-    font-weight: 700;
+    font-weight: bolder;
     box-shadow: 2px 2px 7px 1px black;
-    padding: 2px 10px;
     border: 1px solid black;
     text-decoration: none;
 }
 
-main {
-    background-color: wheat;
-    min-height: 40vh;
-
-}
-
-figure {
-    margin-top: 3px;
-    width: 16%;
-    display: inline-block;
+header figure {
+    justify-content: flex-start;
+    align-self: center;
+    display: inline-flex;
+    padding: 1rem;
 }
 
 #logo {
-    height: 10rem;
+    background-color: rgba(255, 255, 255, 0.404);
+    border-radius: 3rem;
+    height: 15rem;
 }
 
-section {
-    vertical-align: top;
-    display: inline-block;
-    width: 64%;
-    max-width: 75%;
+h1 {
+    font-size: 3rem;
+    padding: 0.5rem;
+    color: white;
+    text-shadow: 3px 3px rgba(0, 0, 0, 0.489);
+    background-color: rgba(0, 0, 0, 0.288);
+    border-radius: 5rem;
+    display: inline-flex;
+}
+
+main {
+    background-color: rgb(255, 243, 219);
+    min-height: 60vh;
 }
 
 .box {
+    width: 100%;
     border: 2px solid black;
     text-align: center;
     background-color: #b84242;
     padding: 8px;
-    position: relative;
-    bottom: 3rem;
-    margin-left: -28%;
-    margin-right: -30.8%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    padding: 15px;
+    display: flex;
+    min-width: 45%;
+    max-width: 65%;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(253, 200, 101, 0.555);
+    border-radius: 1rem;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.443);
+}
+
+article ol {
+    padding: 15px;
 }
 
 section p {
     padding-bottom: 1rem;
 }
 
+table {
+    background-color: rgb(254, 255, 240);
+    height: 50vh;
+    width: 40rem;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+table caption {
+    text-align: left;
+}
+
+table,
+th,
+td {padding: 0.5rem;
+    border: 2px solid;
+    border-color: black;
+    text-align: center;
+}
+
+th {
+    background-color: #37a580;
+    color: aliceblue;
+}
+
+.letra {
+    list-style-type: lower-latin;
+}
+
+figure {
+    display: flex;
+    padding: 3rem;
+    gap: 3rem;
+    justify-content: center;
+}
+
 .gallery {
     height: 100px;
     border: solid 2px #b84242;
     box-sizing: border-box;
+
 }
 
 .gallery:hover {
-    transform: matrix(5, 0, 0, 5, -250, -200);
+    transform: matrix(5, 0, 0, 5, 50, -200);
 }
