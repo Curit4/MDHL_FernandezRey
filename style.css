@@ -15,7 +15,6 @@ header {
     flex-wrap: wrap;
     background-image: url(./assets/design2_image1.jpg);
     background-size: cover;
-    background-position-y: -130px;
     width: 100%;
     justify-content: flex-start;
     align-content: center;
@@ -285,14 +284,16 @@ table {
 table caption {
     text-align: left;
     caption-side: top;
+    
 }
-
+.table-bordered {
+border:2px black solid;
+}
 table,
 th,
 td {
+    border:2px black solid!important;
     padding: 0.5rem;
-    border: 2px solid;
-    border-color: black;
     text-align: center;
 
 }
@@ -303,7 +304,17 @@ th {
     color: black;
 }
 
-
+th:target{
+background-color: #469d89;
+color:white
+}
+.ubi:hover{
+background-color:rgb(252, 216, 60);
+}
+td a{
+    text-decoration: none;
+    color:black
+}
 figure {
     display: flex;
     padding: 3rem;
@@ -431,7 +442,7 @@ input:focus {
         min-height: 20vh;
         gap: 1px;
         background-size: cover;
-        background-position-y: -130px;
+        background-position-y: 0px;
     }
 
     .logo {
@@ -444,6 +455,7 @@ input:focus {
     }
 
     h1 {
+        -webkit-text-stroke: 1px rgba(8, 1, 1, 0.781);
         font-size: 15px !important;
         padding: 8px;
     }
@@ -565,7 +577,7 @@ input:focus {
     }
 
     h1 {
-        font-size: 18px !important;
+        font-size: 19px !important;
     }
 }
 
@@ -677,6 +689,7 @@ input:focus {
 @media (min-width:1000px) {
     header {
         min-height: 20vh;
+    background-position-y: -130px;
     }
 
     #logo {
@@ -688,6 +701,7 @@ input:focus {
     }
 
     h1 {
+        -webkit-text-stroke: 2px rgba(8, 1, 1, 0.781);
         font-size: 30px !important;
     }
 
@@ -766,6 +780,6 @@ input:focus {
     .logo {
         padding: 1rem;
         margin: 2rem;
-    }
+   }
 }
 }
